@@ -1,0 +1,10 @@
+uuid: 60080c8d-f736-4460-ba84-76f5cb395b8d
+langcode: und
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9fH-8KnBRLruipHoKBDedqh5TMCKEcX3HTWpY72d-Yo
+name: Country
+vid: mollo_country
+description: Mollo
+weight: 0

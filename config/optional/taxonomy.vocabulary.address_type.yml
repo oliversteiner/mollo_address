@@ -1,0 +1,8 @@
+uuid: 071da8a2-e450-46be-9c9e-f72f7c88747f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Address Type'
+vid: address_type
+description: ''
+weight: 0

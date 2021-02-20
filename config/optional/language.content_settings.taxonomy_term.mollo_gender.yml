@@ -1,0 +1,11 @@
+uuid: 9fb6378e-b632-4f9d-b4dd-c5c9c51efc90
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.mollo_gender
+id: taxonomy_term.mollo_gender
+target_entity_type_id: taxonomy_term
+target_bundle: mollo_gender
+default_langcode: site_default
+language_alterable: false

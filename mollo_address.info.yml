@@ -1,6 +1,6 @@
-name: 'Clients'
+name: 'Address'
 type: module
-description: 'Client Module for Mollo Events'
+description: 'Address Node Bundle for Mollo Modules'
 core_version_requirement: ^8 || ^9
 package: 'Mollo'
 dependencies:

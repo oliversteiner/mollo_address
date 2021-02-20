@@ -1,0 +1,19 @@
+uuid: a408d6de-abaf-484c-87bc-1cefde372cfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_first_name
+    - node.type.mollo_address
+id: node.mollo_address.field_mollo_first_name
+field_name: field_mollo_first_name
+entity_type: node
+bundle: mollo_address
+label: 'First Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

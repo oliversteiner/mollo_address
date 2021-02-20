@@ -1,0 +1,17 @@
+uuid: b5e43e91-300a-4757-b36d-940f0ba22874
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Address
+type: mollo_address
+description: 'Mollo '
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

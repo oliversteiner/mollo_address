@@ -1,0 +1,69 @@
+uuid: 6bdada7a-903d-48fd-a6fd-bb236b4336eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mollo_address.body
+    - field.field.node.mollo_address.field_address_type
+    - field.field.node.mollo_address.field_mollo_city
+    - field.field.node.mollo_address.field_mollo_country
+    - field.field.node.mollo_address.field_mollo_description
+    - field.field.node.mollo_address.field_mollo_email
+    - field.field.node.mollo_address.field_mollo_facebook
+    - field.field.node.mollo_address.field_mollo_first_name
+    - field.field.node.mollo_address.field_mollo_gender
+    - field.field.node.mollo_address.field_mollo_last_name
+    - field.field.node.mollo_address.field_mollo_links
+    - field.field.node.mollo_address.field_mollo_map
+    - field.field.node.mollo_address.field_mollo_media
+    - field.field.node.mollo_address.field_mollo_mobile
+    - field.field.node.mollo_address.field_mollo_name
+    - field.field.node.mollo_address.field_mollo_phone
+    - field.field.node.mollo_address.field_mollo_place
+    - field.field.node.mollo_address.field_mollo_street_and_number
+    - field.field.node.mollo_address.field_mollo_token
+    - field.field.node.mollo_address.field_mollo_zip_code
+    - node.type.mollo_address
+  module:
+    - text
+    - user
+id: node.mollo_address.teaser
+targetEntityType: node
+bundle: mollo_address
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address_type: true
+  field_mollo_city: true
+  field_mollo_country: true
+  field_mollo_description: true
+  field_mollo_email: true
+  field_mollo_facebook: true
+  field_mollo_first_name: true
+  field_mollo_gender: true
+  field_mollo_last_name: true
+  field_mollo_links: true
+  field_mollo_map: true
+  field_mollo_media: true
+  field_mollo_mobile: true
+  field_mollo_name: true
+  field_mollo_phone: true
+  field_mollo_place: true
+  field_mollo_street_and_number: true
+  field_mollo_token: true
+  field_mollo_zip_code: true
+  langcode: true

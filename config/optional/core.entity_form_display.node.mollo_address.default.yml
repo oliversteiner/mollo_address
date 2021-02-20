@@ -1,0 +1,276 @@
+uuid: 234eb162-3c37-4593-97a1-a403eb2fe30f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mollo_address.body
+    - field.field.node.mollo_address.field_address_type
+    - field.field.node.mollo_address.field_mollo_city
+    - field.field.node.mollo_address.field_mollo_country
+    - field.field.node.mollo_address.field_mollo_description
+    - field.field.node.mollo_address.field_mollo_email
+    - field.field.node.mollo_address.field_mollo_facebook
+    - field.field.node.mollo_address.field_mollo_first_name
+    - field.field.node.mollo_address.field_mollo_gender
+    - field.field.node.mollo_address.field_mollo_last_name
+    - field.field.node.mollo_address.field_mollo_links
+    - field.field.node.mollo_address.field_mollo_map
+    - field.field.node.mollo_address.field_mollo_media
+    - field.field.node.mollo_address.field_mollo_mobile
+    - field.field.node.mollo_address.field_mollo_name
+    - field.field.node.mollo_address.field_mollo_phone
+    - field.field.node.mollo_address.field_mollo_place
+    - field.field.node.mollo_address.field_mollo_street_and_number
+    - field.field.node.mollo_address.field_mollo_token
+    - field.field.node.mollo_address.field_mollo_zip_code
+    - node.type.mollo_address
+  module:
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_address:
+      children:
+        - field_mollo_street_and_number
+        - field_mollo_zip_code
+        - field_mollo_city
+        - field_mollo_country
+        - field_mollo_place
+      parent_name: ''
+      weight: 6
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Address
+    group_contact:
+      children:
+        - field_mollo_email
+        - field_mollo_mobile
+        - field_mollo_phone
+        - field_mollo_links
+        - field_mollo_facebook
+      parent_name: ''
+      weight: 7
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Contact
+    group_media:
+      children:
+        - field_mollo_media
+      parent_name: ''
+      weight: 9
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Media
+    group_map:
+      children:
+        - field_mollo_map
+      parent_name: ''
+      weight: 8
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Map
+    group_other:
+      children:
+        - langcode
+        - status
+        - uid
+        - created
+        - promote
+        - sticky
+        - path
+        - body
+        - field_mollo_description
+      parent_name: ''
+      weight: 11
+      format_type: details
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Other
+id: node.mollo_address.default
+targetEntityType: node
+bundle: mollo_address
+mode: default
+content:
+  field_address_type:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mollo_city:
+    weight: 15
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_country:
+    weight: 16
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mollo_email:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_mollo_facebook:
+    weight: 21
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mollo_first_name:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_gender:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mollo_last_name:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_links:
+    weight: 20
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mollo_map:
+    weight: 19
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_media:
+    weight: 21
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mollo_mobile:
+    weight: 18
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_phone:
+    weight: 19
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_place:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_street_and_number:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mollo_zip_code:
+    weight: 14
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  field_mollo_description: true
+  field_mollo_token: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

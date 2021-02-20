@@ -1,0 +1,9 @@
+status: 1
+pattern: '[node:field_mollo_street_and_number], [node:field_mollo_zip_code] [node:field_mollo_city]'
+escape: false
+preserve_titles: false
+save: 0
+chunk: '50'
+dependencies:
+  config:
+    - node.type.mollo_address

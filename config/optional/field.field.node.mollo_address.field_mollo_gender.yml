@@ -1,0 +1,29 @@
+uuid: 9c31b53a-e070-4bc4-9ecf-c411beefe10a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_gender
+    - node.type.mollo_address
+    - taxonomy.vocabulary.mollo_gender
+id: node.mollo_address.field_mollo_gender
+field_name: field_mollo_gender
+entity_type: node
+bundle: mollo_address
+label: Gender
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mollo_gender: mollo_gender
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

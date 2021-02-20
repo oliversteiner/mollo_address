@@ -1,0 +1,11 @@
+uuid: ff5890a8-413f-465d-aad1-dd5e90024c86
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mollo_address
+id: node.mollo_address
+target_entity_type_id: node
+target_bundle: mollo_address
+default_langcode: site_default
+language_alterable: false

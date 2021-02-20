@@ -1,0 +1,33 @@
+uuid: 39777ccd-ba67-480f-bd00-bc01f7c13521
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address_type
+    - node.type.mollo_address
+    - taxonomy.vocabulary.address_type
+  content:
+    - 'taxonomy_term:address_type:18553a07-6be8-4cf2-9645-7fe64846a99b'
+id: node.mollo_address.field_address_type
+field_name: field_address_type
+entity_type: node
+bundle: mollo_address
+label: 'Address Type'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 18553a07-6be8-4cf2-9645-7fe64846a99b
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      address_type: address_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

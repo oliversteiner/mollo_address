@@ -1,0 +1,19 @@
+uuid: e6f84325-edde-4a5d-8ba7-3c4016d7bfc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_city
+    - node.type.mollo_address
+id: node.mollo_address.field_mollo_city
+field_name: field_mollo_city
+entity_type: node
+bundle: mollo_address
+label: City
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

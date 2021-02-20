@@ -1,0 +1,9 @@
+mollo_address.main:
+  css:
+    theme:
+      assets/css/mollo_address.css: {}
+  js:
+    assets/js/mollo_address.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

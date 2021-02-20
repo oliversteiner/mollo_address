@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains mollo_address.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\mollo_utils\Utility\ViewFilter;
+
+/**
+ * Implements hook_help().
+ */
+function mollo_address_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mollo_address module.
+    case 'help.page.mollo_address':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Client Module for Mollo Events') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mollo_address_theme() {
+  return [
+    'mollo_address' => [
+      'render element' => 'children',
+    ],
+  ];
+}
